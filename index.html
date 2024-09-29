@@ -157,11 +157,18 @@
 </div>
 </body>
 <script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
+<script src="./fastclick.min.js"></script>
 <!-- import JavaScript -->
 <script src="https://unpkg.com/element-ui"></script>
 <script src="https://unpkg.com/element-ui/lib/umd/locale/en.js"></script>
 <script src="./calculator.js"></script>
+
 <script>
     ELEMENT.locale(ELEMENT.lang.en)
+    if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+            FastClick.attach(document.body);
+        }, false);
+    }
 </script>
 </html>
