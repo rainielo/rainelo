@@ -73,6 +73,10 @@
         .el-select {
             width: 100%;
         }
+
+        .popper-scrollbar-show .el-scrollbar .el-scrollbar__bar.is-vertical {
+            display: block !important;
+        }
     </style>
 
     <!-- import Vue before Element -->
@@ -86,7 +90,7 @@
                 <h3>Construction Cost Indicator</h3>
                 <el-form-item prop="region">
                     <el-select
-                            @touchend="hackSelectMobile"
+                            popper-class="popper-scrollbar-show"
                             v-model="form.region" placeholder="REGION"
                             notFoundContent="Not Found"
                             @change="resetField(['workType', 'description', 'detailDescription', 'unitOfMeasure'])">
@@ -99,7 +103,7 @@
                 </el-form-item>
                 <el-form-item prop="workType">
                     <el-select
-                            @touchend="hackSelectMobile"
+                            popper-class="popper-scrollbar-show"
                             v-model="form.workType" placeholder="WORK TYPE"
                             @change="resetField(['description', 'detailDescription','unitOfMeasure'])">
                         <el-option v-for="item in WORK_TYPE" :label="item" :value="item" :key="item"></el-option>
@@ -108,7 +112,7 @@
 
                 <el-form-item prop="description">
                     <el-select
-                            @touchend="hackSelectMobile"
+                            popper-class="popper-scrollbar-show"
                             v-model="form.description" placeholder="DESCRIPTION"
                             @change="resetField(['detailDescription', 'unitOfMeasure'])">
                         <el-option v-for="item in DESCRIPTION" :label="item" :value="item" :key="item"></el-option>
@@ -117,7 +121,7 @@
 
                 <el-form-item prop="detailDescription" v-if="DETAIL_DESCRIPTION.length">
                     <el-select
-                            @touchend="hackSelectMobile"
+                            popper-class="popper-scrollbar-show"
                             v-model="form.detailDescription" placeholder="DETAIL DESCRIPTION" @change="resetField(['unitOfMeasure'])">
                         <el-option v-for="item in DETAIL_DESCRIPTION" :label="item" :value="item" :key="item"></el-option>
                     </el-select>
@@ -125,7 +129,7 @@
 
                 <el-form-item prop="unitOfMeasure">
                     <el-select
-                            @touchend="hackSelectMobile"
+                            popper-class="popper-scrollbar-show"
                             v-model="form.unitOfMeasure" placeholder="UNIT OF MEASURE">
                         <el-option v-for="item in UNIT_OF_MEASURE" :label="item.toUpperCase()" :value="item" :key="item"></el-option>
                     </el-select>

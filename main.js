@@ -32,17 +32,6 @@ new Vue({
         };
     },
     methods: {
-        hackSelectMobile(r) {
-            console.log(r);
-            const selectListEl = document.body.querySelector('.el-popper.el-select__popper');
-            const scrollbarEl = selectListEl.querySelector('.el-scrollbar__bar.is-vertical');
-            if (scrollbarEl) {
-                scrollbarEl.style.display = 'none';
-                setTimeout(() => {
-                    scrollbarEl.style.display = 'block';
-                }, 301);
-            }
-        },
         resetField(fields = []) {
             const value = fields.reduce((obj, cur) => {
                 obj[cur] = '';
