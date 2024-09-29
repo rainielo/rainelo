@@ -33,26 +33,26 @@
 
         .el-button--primary {
             color: #FFF;
-            background-color: rgb(1,84,80);
-            border-color: rgb(1,84,80)
+            background-color: #cd0e2c;
+            border-color: #cd0e2c
         }
 
         .el-button--primary:focus, .el-button--primary:hover {
-            background: rgb(1,84,80);
-            border-color: rgb(1,84,80);
+            background: #cd0e2c;
+            border-color: #cd0e2c;
             color: #FFF
         }
 
         .el-button--primary.is-active, .el-button--primary:active {
-            background: rgb(1,84,80);
-            border-color: rgb(1,84,80);
+            background: #cd0e2c;
+            border-color: #cd0e2c;
             color: #FFF
         }
 
         .el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover {
             color: #FFF;
-            background-color: #a0cfff;
-            border-color: #a0cfff
+            background-color: rgba(205, 14, 44, 0.2);
+            border-color: rgba(205, 14, 44, 0.2)
         }
 
 
@@ -72,6 +72,10 @@
 
         .popper-scrollbar-show .el-scrollbar > .el-scrollbar__bar.is-vertical {
             display: block !important;
+        }
+
+        .el-select {
+            width: 100%;
         }
     </style>
 
@@ -114,7 +118,7 @@
                 </el-form-item>
 
                 <el-form-item>
-                    <el-button type="primary" :disabled="disabled" @click="clickCalculateBtn">CALCULATE</el-button>
+                    <el-button type="primary" style="width: 100%" :disabled="disabled" @click="clickCalculateBtn">CALCULATE</el-button>
                 </el-form-item>
 
             </el-form>
