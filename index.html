@@ -57,7 +57,7 @@
 
 
         .primary {
-            color: rgb(1,84,80);
+            color: #cd0e2c;
         }
 
         .el-empty__description {
@@ -143,7 +143,7 @@
                             class-name="primary"
                             :formatter="numberFormat"
                             property="low"
-                            label="Low">
+                            label="LOW">
                     </el-table-column>
                     <el-table-column
                             class-name="primary"
@@ -154,7 +154,7 @@
                 </el-table>
 
                 <div class="mt24" v-if="form.unitOfMeasure === 'AUD $/㎡'">
-                    <el-radio-group v-model="unitSwitch" size="mini" fill="rgb(1,84,80)">
+                    <el-radio-group v-model="unitSwitch" size="mini" fill="#cd0e2c">
                         <el-radio-button label="sq ft"></el-radio-button>
                         <el-radio-button label="㎡"></el-radio-button>
                     </el-radio-group>
