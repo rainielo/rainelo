@@ -214,5 +214,8 @@ new Vue({
 
         xhr.send();
 
+    },
+    mounted() {
+        ELEMENT.locale(ELEMENT.lang.en)
     }
 })

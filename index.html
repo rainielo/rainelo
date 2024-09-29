@@ -69,6 +69,10 @@
             background-color: rgb(250, 250, 250);
             text-align: center;
         }
+
+        .popper-scrollbar-show .el-scrollbar > .el-scrollbar__bar.is-vertical {
+            display: block !important;
+        }
     </style>
 
     <!-- import Vue before Element -->
@@ -81,30 +85,30 @@
             <el-form style="text-align: center" :model="form">
                 <h3>Construction Cost Indicator</h3>
                 <el-form-item prop="region">
-                    <el-select v-model="form.region" placeholder="REGION" @change="resetField(['workType', 'description', 'detailDescription', 'unitOfMeasure'])">
+                    <el-select popper-class="popper-scrollbar-show" v-model="form.region" placeholder="REGION" @change="resetField(['workType', 'description', 'detailDescription', 'unitOfMeasure'])">
                         <el-option v-for="item in REGION" :label="item.toUpperCase()" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
                 <el-form-item prop="workType">
-                    <el-select v-model="form.workType" placeholder="WORK TYPE" @change="resetField(['description', 'detailDescription','unitOfMeasure'])">
+                    <el-select popper-class="popper-scrollbar-show" v-model="form.workType" placeholder="WORK TYPE" @change="resetField(['description', 'detailDescription','unitOfMeasure'])">
                         <el-option v-for="item in WORK_TYPE" :label="item" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
 
                 <el-form-item prop="description">
-                    <el-select v-model="form.description" placeholder="DESCRIPTION" @change="resetField(['detailDescription', 'unitOfMeasure'])">
+                    <el-select popper-class="popper-scrollbar-show" v-model="form.description" placeholder="DESCRIPTION" @change="resetField(['detailDescription', 'unitOfMeasure'])">
                         <el-option v-for="item in DESCRIPTION" :label="item" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
 
                 <el-form-item prop="detailDescription" v-if="DETAIL_DESCRIPTION.length">
-                    <el-select v-model="form.detailDescription" placeholder="DETAIL DESCRIPTION" @change="resetField(['unitOfMeasure'])">
+                    <el-select popper-class="popper-scrollbar-show" v-model="form.detailDescription" placeholder="DETAIL DESCRIPTION" @change="resetField(['unitOfMeasure'])">
                         <el-option v-for="item in DETAIL_DESCRIPTION" :label="item" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
 
                 <el-form-item prop="unitOfMeasure">
-                    <el-select v-model="form.unitOfMeasure" placeholder="UNIT OF MEASURE">
+                    <el-select popper-class="popper-scrollbar-show" v-model="form.unitOfMeasure" placeholder="UNIT OF MEASURE">
                         <el-option v-for="item in UNIT_OF_MEASURE" :label="item" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
@@ -150,25 +154,17 @@
 
             </div>
 
-            <el-empty v-else description="Make your selection on the left to get started." style="background-color: #fafafa;height: 100%"></el-empty>
+            <el-image
+                    src="./empty.jpg" v-else fit="contain"
+                    style="background-color: #fafafa;height: 100%;width: 100%"></el-image>
 
         </el-col>
     </el-row>
 </div>
 </body>
 <script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
-<script src="./fastclick.min.js"></script>
 <!-- import JavaScript -->
 <script src="https://unpkg.com/element-ui"></script>
 <script src="https://unpkg.com/element-ui/lib/umd/locale/en.js"></script>
-<script src="./calculator.js"></script>
-
-<script>
-    ELEMENT.locale(ELEMENT.lang.en)
-    if ('addEventListener' in document) {
-        document.addEventListener('DOMContentLoaded', function() {
-            FastClick.attach(document.body);
-        }, false);
-    }
-</script>
+<script src="./main.js"></script>
 </html>
