@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        #app {
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 840px;
+            margin: auto;
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+
+        .pd24 {
+            padding: 24px;
+            //border: 1px solid #ebeef2;
+        }
+
+        .mt24 {
+            margin-top: 24px;
+        }
+
+        .el-button--primary {
+            color: #FFF;
+            background-color: rgb(1,84,80);
+            border-color: rgb(1,84,80)
+        }
+
+        .el-button--primary:focus, .el-button--primary:hover {
+            background: rgb(1,84,80);
+            border-color: rgb(1,84,80);
+            color: #FFF
+        }
+
+        .el-button--primary.is-active, .el-button--primary:active {
+            background: rgb(1,84,80);
+            border-color: rgb(1,84,80);
+            color: #FFF
+        }
+
+        .el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover {
+            color: #FFF;
+            background-color: #a0cfff;
+            border-color: #a0cfff
+        }
+
+
+        .primary {
+            color: rgb(1,84,80);
+        }
+
+        .el-empty__description {
+            padding: 20px;
+        }
+
+        .result {
+            padding: 20px;
+            background-color: rgb(250, 250, 250);
+            text-align: center;
+        }
+    </style>
+
+    <!-- import Vue before Element -->
+    <script src="https://unpkg.com/vue@2"></script>
+</head>
+<body>
+<div id="app" class="pd24" v-cloak v-loading="loading">
+    <el-row :gutter="20" type="flex" style="flex-wrap: wrap">
+        <el-col :xs="24" :sm="24" :md="8">
+            <el-form style="text-align: center" :model="form">
+                <h3>Construction Cost Indicator</h3>
+                <el-form-item prop="region">
+                    <el-select v-model="form.region" placeholder="REGION" @change="resetField(['workType', 'description', 'detailDescription', 'unitOfMeasure'])">
+                        <el-option v-for="item in REGION" :label="item.toUpperCase()" :value="item" :key="item"></el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item prop="workType">
+                    <el-select v-model="form.workType" placeholder="WORK TYPE" @change="resetField(['description', 'detailDescription','unitOfMeasure'])">
+                        <el-option v-for="item in WORK_TYPE" :label="item" :value="item" :key="item"></el-option>
+                    </el-select>
+                </el-form-item>
+
+                <el-form-item prop="description">
+                    <el-select v-model="form.description" placeholder="DESCRIPTION" @change="resetField(['detailDescription', 'unitOfMeasure'])">
+                        <el-option v-for="item in DESCRIPTION" :label="item" :value="item" :key="item"></el-option>
+                    </el-select>
+                </el-form-item>
+
+                <el-form-item prop="detailDescription" v-if="DETAIL_DESCRIPTION.length">
+                    <el-select v-model="form.detailDescription" placeholder="DETAIL DESCRIPTION" @change="resetField(['unitOfMeasure'])">
+                        <el-option v-for="item in DETAIL_DESCRIPTION" :label="item" :value="item" :key="item"></el-option>
+                    </el-select>
+                </el-form-item>
+
+                <el-form-item prop="unitOfMeasure">
+                    <el-select v-model="form.unitOfMeasure" placeholder="UNIT OF MEASURE">
+                        <el-option v-for="item in UNIT_OF_MEASURE" :label="item" :value="item" :key="item"></el-option>
+                    </el-select>
+                </el-form-item>
+
+                <el-form-item>
+                    <el-button type="primary" :disabled="disabled" @click="clickCalculateBtn">CALCULATE</el-button>
+                </el-form-item>
+
+            </el-form>
+        </el-col>
+        <el-col :xs="24" :sm="24" :md="16">
+            <div class="result" v-if="result">
+                <h3>{{result.region}} - {{ result.workType }}</h3>
+                <p>{{[result.description, result.detailDescription].filter(Boolean).join('.')}}</p>
+
+                <section style="display: flex">
+                    <el-input style="flex-grow: 1;margin-right: 20px" type="number" v-model="num" :placeholder="getUnitPlaceHolder(result.unitOfMeasure)"></el-input>
+                    <el-button type="primary" @click="clickEnterBtn">ENTER</el-button>
+                </section>
+
+                <el-table :data="tableData" stripe class="mt24">
+                    <el-table-column property="unitOfMeasure"></el-table-column>
+                    <el-table-column
+                            class-name="primary"
+                            :formatter="numberFormat"
+                            property="low"
+                            label="Low">
+                    </el-table-column>
+                    <el-table-column
+                            class-name="primary"
+                            :formatter="numberFormat"
+                            property="high"
+                            label="HIGH">
+                    </el-table-column>
+                </el-table>
+
+                <div class="mt24" v-if="form.unitOfMeasure === 'AUD $/㎡'">
+                    <el-radio-group v-model="unitSwitch" size="mini" fill="rgb(1,84,80)">
+                        <el-radio-button label="sq ft"></el-radio-button>
+                        <el-radio-button label="㎡"></el-radio-button>
+                    </el-radio-group>
+                </div>
+
+            </div>
+
+            <el-empty v-else description="Make your selection on the left to get started." style="background-color: #fafafa;height: 100%"></el-empty>
+
+        </el-col>
+    </el-row>
+</div>
+</body>
+<script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui"></script>
+<script src="https://unpkg.com/element-ui/lib/umd/locale/en.js"></script>
+<script src="./calculator.js"></script>
+<script>
+    ELEMENT.locale(ELEMENT.lang.en)
+</script>
+</html>
