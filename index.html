@@ -70,14 +70,6 @@
             text-align: center;
         }
 
-        .popper-scrollbar-show .el-scrollbar > .el-scrollbar__bar.is-vertical {
-            display: block !important;
-        }
-
-        .el-scrollbar .el-scrollbar__bar {
-            opacity: 1 !important;
-        }
-
         .el-select {
             width: 100%;
         }
@@ -93,31 +85,49 @@
             <el-form style="text-align: center" :model="form">
                 <h3>Construction Cost Indicator</h3>
                 <el-form-item prop="region">
-                    <el-select popper-class="popper-scrollbar-show" v-model="form.region" placeholder="REGION" @change="resetField(['workType', 'description', 'detailDescription', 'unitOfMeasure'])">
-                        <el-option v-for="item in REGION" :label="item.toUpperCase()" :value="item" :key="item"></el-option>
+                    <el-select
+                            @touchend="hackSelectMobile"
+                            v-model="form.region" placeholder="REGION"
+                            notFoundContent="Not Found"
+                            @change="resetField(['workType', 'description', 'detailDescription', 'unitOfMeasure'])">
+                        <el-option
+                                v-for="item in REGION"
+                                :label="item.toUpperCase()"
+                                :value="item"
+                                :key="item"></el-option>
                     </el-select>
                 </el-form-item>
                 <el-form-item prop="workType">
-                    <el-select popper-class="popper-scrollbar-show" v-model="form.workType" placeholder="WORK TYPE" @change="resetField(['description', 'detailDescription','unitOfMeasure'])">
+                    <el-select
+                            @touchend="hackSelectMobile"
+                            v-model="form.workType" placeholder="WORK TYPE"
+                            @change="resetField(['description', 'detailDescription','unitOfMeasure'])">
                         <el-option v-for="item in WORK_TYPE" :label="item" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
 
                 <el-form-item prop="description">
-                    <el-select popper-class="popper-scrollbar-show" v-model="form.description" placeholder="DESCRIPTION" @change="resetField(['detailDescription', 'unitOfMeasure'])">
+                    <el-select
+                            @touchend="hackSelectMobile"
+                            v-model="form.description" placeholder="DESCRIPTION"
+                            @change="resetField(['detailDescription', 'unitOfMeasure'])">
                         <el-option v-for="item in DESCRIPTION" :label="item" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
 
                 <el-form-item prop="detailDescription" v-if="DETAIL_DESCRIPTION.length">
-                    <el-select popper-class="popper-scrollbar-show" v-model="form.detailDescription" placeholder="DETAIL DESCRIPTION" @change="resetField(['unitOfMeasure'])">
+                    <el-select
+                            @touchend="hackSelectMobile"
+                            v-model="form.detailDescription" placeholder="DETAIL DESCRIPTION" @change="resetField(['unitOfMeasure'])">
                         <el-option v-for="item in DETAIL_DESCRIPTION" :label="item" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
 
                 <el-form-item prop="unitOfMeasure">
-                    <el-select popper-class="popper-scrollbar-show" v-model="form.unitOfMeasure" placeholder="UNIT OF MEASURE">
-                        <el-option v-for="item in UNIT_OF_MEASURE" :label="item" :value="item" :key="item"></el-option>
+                    <el-select
+                            @touchend="hackSelectMobile"
+                            v-model="form.unitOfMeasure" placeholder="UNIT OF MEASURE">
+                        <el-option v-for="item in UNIT_OF_MEASURE" :label="item.toUpperCase()" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
 

@@ -26,68 +26,79 @@ new Vue({
             unitSwitch: '㎡',
             tableData: [],
             loading: false,
-            result: null
-
+            result: null,
+            alert: window.alert
             // 通过接口返回的数据
-        }
+        };
     },
     methods: {
+        hackSelectMobile(r) {
+            console.log(r);
+            const selectListEl = document.body.querySelector('.el-popper.el-select__popper');
+            const scrollbarEl = selectListEl.querySelector('.el-scrollbar__bar.is-vertical');
+            if (scrollbarEl) {
+                scrollbarEl.style.display = 'none';
+                setTimeout(() => {
+                    scrollbarEl.style.display = 'block';
+                }, 301);
+            }
+        },
         resetField(fields = []) {
             const value = fields.reduce((obj, cur) => {
-                obj[cur] = ''
-                return obj
-            }, {})
-            this.form = Object.assign(this.form, value)
+                obj[cur] = '';
+                return obj;
+            }, {});
+            this.form = Object.assign(this.form, value);
         },
         getUnitLabel(unit) {
             switch (unit) {
                 case 'AUD $/bed':
-                    return ' Beds'
+                    return ' Beds';
                 case 'AUD $/car':
-                    return ' Cars'
+                    return ' Cars';
                 case 'AUD $/seat':
-                    return ' Seats'
+                    return ' Seats';
                 case 'AUD $/bedroom':
-                    return ' Bedrooms'
+                    return ' Bedrooms';
                 case 'AUD $/berth':
-                    return ' Berths'
+                    return ' Berths';
                 case 'AUD $/pool':
-                    return ' Pools'
+                    return ' Pools';
                 case 'AUD $/court':
-                    return ' Courts'
+                    return ' Courts';
                 case 'AUD $/unit':
-                    return ' Units'
+                    return ' Units';
                 case 'AUD $/hectare':
-                    return ' Hectares'
+                    return ' Hectares';
                 case 'AUD $/workstation':
-                    return ' Workstations'
+                    return ' Workstations';
                 default:
-                    return ' Floor Area'
+                    return ' Floor Area';
             }
         },
         getUnitPlaceHolder(unit) {
             switch (unit) {
                 case 'AUD $/bed':
-                    return 'Total Number of Beds'
+                    return 'Total Number of Beds';
                 case 'AUD $/car':
-                    return 'Total Number of Cars'
+                    return 'Total Number of Cars';
                 case 'AUD $/seat':
-                    return 'Total Number of Seats'
+                    return 'Total Number of Seats';
                 case 'AUD $/bedroom':
-                    return 'Total Number of Bedrooms'
+                    return 'Total Number of Bedrooms';
                 case 'AUD $/berth':
-                    return 'Total Number of Berths'
+                    return 'Total Number of Berths';
                 case 'AUD $/pool':
-                    return 'Total Number of Pools'
+                    return 'Total Number of Pools';
                 case 'AUD $/court':
-                    return 'Total Number of Court'
+                    return 'Total Number of Court';
                 case 'AUD $/unit':
-                    return 'Total Number of Units'
+                    return 'Total Number of Units';
                 case 'AUD $/hectare':
-                    return 'Total Number of Hectares'
+                    return 'Total Number of Hectares';
 
                 default:
-                    return 'Floor Area'
+                    return 'Floor Area';
             }
         },
         clickEnterBtn() {
@@ -103,15 +114,15 @@ new Vue({
         },
         numberFormat(row, column, value) {
             // 先进行平方英尺和平方米的转换 1平方英尺(sq.ft) = 0.092903平方米(㎡)
-            let temp = value
+            let temp = value;
             if (this.unitSwitch === 'sq ft') {
-                temp = value * 0.092903
+                temp = value * 0.092903;
             }
 
             if (temp >= 1000000000) {
-                return Math.floor((temp / 1000000000) * 100) / 100 + 'B'
+                return Math.floor((temp / 1000000000) * 100) / 100 + 'B';
             } else if (temp >= 1000000) {
-                return Math.floor((temp / 1000000) * 100) / 100 + 'M'
+                return Math.floor((temp / 1000000) * 100) / 100 + 'M';
             } else {
                 return Math.floor(temp).toLocaleString();
             }
@@ -120,38 +131,37 @@ new Vue({
             // 开始计算结果
             try {
                 const result = this.regionArray.find(item => {
-                    return `${this.form.region}${this.form.workType}${this.form.description}${this.form.detailDescription}${this.form.unitOfMeasure}`
-                        === `${item.region}${item.workType}${item.description}${item.detailDescription || ''}${item.unitOfMeasure}`
-                })
+                    return `${this.form.region}${this.form.workType}${this.form.description}${this.form.detailDescription}${this.form.unitOfMeasure}` === `${item.region}${item.workType}${item.description}${item.detailDescription || ''}${item.unitOfMeasure}`
+                });
 
-                this.result = result
+                this.result = result;
 
-                this.tableData = [this.result]
+                this.tableData = [this.result];
             } catch (e) {
-                this.$message.error('No Results Found')
+                this.$message.error('No Results Found');
             }
         },
     },
     watch: {
         form: {
             handler(v) {
-                this.result = null
-                this.num = ''
+                this.result = null;
+                this.num = '';
             },
             deep: true
         }
     },
     computed: {
         regionArray() {
-            if (this.form.region) return this.cciData[this.form.region][this.form.region]
-            return []
+            if (this.form.region) return this.cciData[this.form.region][this.form.region];
+            return [];
         },
         WORK_TYPE() {
             // 联动计算选项
             try {
                 return [...new Set(this.regionArray.map(item => item.workType))]
             } catch (e) {
-                return []
+                return [];
             }
         },
         DESCRIPTION() {
@@ -159,9 +169,9 @@ new Vue({
             try {
                 return [...new Set(this.regionArray
                     .filter(item => (item.workType === this.form.workType))
-                    .map(item => item.description))]
+                    .map(item => item.description))];
             } catch (e) {
-                return []
+                return [];
             }
         },
         DETAIL_DESCRIPTION() {
@@ -170,9 +180,9 @@ new Vue({
                 return [...new Set(this.regionArray
                     .filter(item => (item.workType === this.form.workType))
                     .filter(item => (item.description === this.form.description))
-                    .map(item => item.detailDescription))].filter(Boolean)
+                    .map(item => item.detailDescription))].filter(Boolean);
             } catch (e) {
-                return []
+                return [];
             }
         },
         UNIT_OF_MEASURE() {
@@ -182,21 +192,21 @@ new Vue({
                     .filter(item => (item.workType === this.form.workType))
                     .filter(item => (item.description === this.form.description))
                     .filter(item => this.DETAIL_DESCRIPTION.length ? (item.detailDescription === this.form.detailDescription) : true) // 兼容空值的情况
-                    .map(item => item.unitOfMeasure))]
+                    .map(item => item.unitOfMeasure))];
             } catch (e) {
-                return []
+                return [];
             }
         },
         disabled() {
             // 全部都选上了才显示结果栏
-            if (this.DETAIL_DESCRIPTION.length && !this.form.detailDescription) return true
+            if (this.DETAIL_DESCRIPTION.length && !this.form.detailDescription) return true;
 
             return [
                 this.form.region,
                 this.form.workType,
                 this.form.description,
                 this.form.unitOfMeasure,
-            ].some(item => (item === ''))
+            ].some(item => (item === ''));
         }
     },
     created() {
@@ -216,6 +226,6 @@ new Vue({
 
     },
     mounted() {
-        ELEMENT.locale(ELEMENT.lang.en)
+        ELEMENT.locale(ELEMENT.lang.en);
     }
 })
