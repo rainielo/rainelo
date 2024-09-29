@@ -1,3 +1,7 @@
+### 下载代码到本地
+```git clone https://github.com/rainielo/rainelo.git``` 
+
+
 ### 使用说明
 
 修改excel数据后，执行export.sh导出cci.json文件到根目录
