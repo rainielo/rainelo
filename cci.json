@@ -4276,11 +4276,11 @@
       }
     ]
   },
-  "GoldCoast": {
-    "id": "GoldCoast",
-    "GoldCoast": [
+  "Gold Coast": {
+    "id": "Gold Coast",
+    "Gold Coast": [
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Aged Care",
         "description": "Multi Storey Facility",
         "detailDescription": null,
@@ -4289,7 +4289,7 @@
         "high": "515000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Aged Care",
         "description": "Multi Storey Facility",
         "detailDescription": null,
@@ -4298,7 +4298,7 @@
         "high": "5100"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Aged Care",
         "description": "Single Storey Facility",
         "detailDescription": null,
@@ -4307,7 +4307,7 @@
         "high": "330000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Aged Care",
         "description": "Single Storey Facility",
         "detailDescription": null,
@@ -4316,7 +4316,7 @@
         "high": "4000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Car Park",
         "description": "Basement CBD",
         "detailDescription": null,
@@ -4325,7 +4325,7 @@
         "high": "87000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Car Park",
         "description": "Basement CBD",
         "detailDescription": null,
@@ -4334,7 +4334,7 @@
         "high": "2600"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Car Park",
         "description": "Basement Other than CBD",
         "detailDescription": null,
@@ -4343,7 +4343,7 @@
         "high": "82000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Car Park",
         "description": "Basement Other than CBD",
         "detailDescription": null,
@@ -4352,7 +4352,7 @@
         "high": "2300"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Car Park",
         "description": "Open Deck Multi Storey",
         "detailDescription": null,
@@ -4361,7 +4361,7 @@
         "high": "58000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Car Park",
         "description": "Open Deck Multi Storey",
         "detailDescription": null,
@@ -4370,7 +4370,7 @@
         "high": "1640"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Car Park",
         "description": "Undercroft Other than CBD",
         "detailDescription": null,
@@ -4379,7 +4379,7 @@
         "high": "46500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Car Park",
         "description": "Undercroft Other than CBD",
         "detailDescription": null,
@@ -4388,7 +4388,7 @@
         "high": "N/A"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Cinemas",
         "description": "Group complex 2,000-4,000 seat (Warm Shell)",
         "detailDescription": null,
@@ -4397,7 +4397,7 @@
         "high": "6600"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Cinemas",
         "description": "Group complex 2,000-4,000 seat (Warm Shell)",
         "detailDescription": null,
@@ -4406,7 +4406,7 @@
         "high": "19500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Hotel FF&E",
         "description": "Five Star Rating",
         "detailDescription": null,
@@ -4415,7 +4415,7 @@
         "high": "150000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Hotel FF&E",
         "description": "Four Star Rating",
         "detailDescription": null,
@@ -4424,7 +4424,7 @@
         "high": "84000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Hotel FF&E",
         "description": "Three Star Rating",
         "detailDescription": null,
@@ -4433,7 +4433,7 @@
         "high": "70000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Hotels Multi-Storey",
         "description": "Five Star Rating",
         "detailDescription": null,
@@ -4442,7 +4442,7 @@
         "high": "817500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Hotels Multi-Storey",
         "description": "Five Star Rating",
         "detailDescription": null,
@@ -4451,7 +4451,7 @@
         "high": "8300"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Hotels Multi-Storey",
         "description": "Four Star Rating",
         "detailDescription": null,
@@ -4460,7 +4460,7 @@
         "high": "705000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Hotels Multi-Storey",
         "description": "Four Star Rating",
         "detailDescription": null,
@@ -4469,7 +4469,7 @@
         "high": "7400"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Hotels Multi-Storey",
         "description": "Three Star Rating",
         "detailDescription": null,
@@ -4478,7 +4478,7 @@
         "high": "412500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Hotels Multi-Storey",
         "description": "Three Star Rating",
         "detailDescription": null,
@@ -4487,7 +4487,7 @@
         "high": "5700"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Industrial 6.00m to U\\/S Truss",
         "description": "4500㎡ fl.area Metal Cladding",
         "detailDescription": null,
@@ -4496,7 +4496,7 @@
         "high": "1280"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Industrial 6.00m to U\\/S Truss",
         "description": "4500㎡ fl.area PCC Cladding",
         "detailDescription": null,
@@ -4505,7 +4505,7 @@
         "high": "1660"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Industrial att. a\\/c offices",
         "description": "200㎡",
         "detailDescription": null,
@@ -4514,7 +4514,7 @@
         "high": "3700"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Industrial att. a\\/c offices",
         "description": "400㎡",
         "detailDescription": null,
@@ -4523,7 +4523,7 @@
         "high": "3900"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Office Fit-Out",
         "description": "Computer Areas",
         "detailDescription": "Fully Partitioned",
@@ -4532,7 +4532,7 @@
         "high": "7600"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Office Fit-Out",
         "description": "Computer Areas",
         "detailDescription": "Open Planned",
@@ -4541,7 +4541,7 @@
         "high": "4900"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Office Fit-Out",
         "description": "Executive and Front of House",
         "detailDescription": "Fully Partitioned",
@@ -4550,7 +4550,7 @@
         "high": "17000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Office Fit-Out",
         "description": "Insurance Offices Government Departments",
         "detailDescription": "Fully Partitioned",
@@ -4559,7 +4559,7 @@
         "high": "2400"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Office Fit-Out",
         "description": "Insurance Offices Government Departments",
         "detailDescription": "Open Planned",
@@ -4568,7 +4568,7 @@
         "high": "1960"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Office Fit-Out",
         "description": "Major Company Headquarters",
         "detailDescription": "Fully Partitioned",
@@ -4577,7 +4577,7 @@
         "high": "3200"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Office Fit-Out",
         "description": "Major Company Headquarters",
         "detailDescription": "Open Planned",
@@ -4586,7 +4586,7 @@
         "high": "2600"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Office Fit-Out",
         "description": "Solicitor, Financiers",
         "detailDescription": "Fully Partitioned",
@@ -4595,7 +4595,7 @@
         "high": "3200"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Office Fit-Out",
         "description": "Solicitor, Financiers",
         "detailDescription": "Open Planned",
@@ -4604,7 +4604,7 @@
         "high": "2600"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Office Refurbishment",
         "description": "CBD officecs Core Upgrade(Excl. lifts upgrade)",
         "detailDescription": null,
@@ -4613,7 +4613,7 @@
         "high": "2600"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Office Refurbishment",
         "description": "CBD offices Typical floor",
         "detailDescription": null,
@@ -4622,7 +4622,7 @@
         "high": "3800"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Offices Investment CBD",
         "description": "10-25 Storeys",
         "detailDescription": null,
@@ -4631,7 +4631,7 @@
         "high": "4950"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Offices Investment CBD",
         "description": "25-40 Storeys",
         "detailDescription": null,
@@ -4640,7 +4640,7 @@
         "high": "5500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Offices Investment CBD",
         "description": "Up to 10 Storeys",
         "detailDescription": null,
@@ -4649,7 +4649,7 @@
         "high": "4350"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Offices Investment Non CBD",
         "description": "1-3 Storeys",
         "detailDescription": null,
@@ -4658,7 +4658,7 @@
         "high": "3600"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Offices Investment Non CBD",
         "description": "10-25 Storeys",
         "detailDescription": null,
@@ -4667,7 +4667,7 @@
         "high": "4750"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Offices Investment Non CBD",
         "description": "Up to 10 Storeys",
         "detailDescription": null,
@@ -4676,7 +4676,7 @@
         "high": "4150"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Offices Prestige CBD",
         "description": "10-25 Storeys",
         "detailDescription": null,
@@ -4685,7 +4685,7 @@
         "high": "5800"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Offices Prestige CBD",
         "description": "25-40 Storeys",
         "detailDescription": null,
@@ -4694,7 +4694,7 @@
         "high": "6800"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Offices Prestige CBD",
         "description": "40-55 Storeys",
         "detailDescription": null,
@@ -4703,7 +4703,7 @@
         "high": "7400"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Private Hospitals Low Rise",
         "description": "45-60㎡ floor area per bed",
         "detailDescription": null,
@@ -4712,7 +4712,7 @@
         "high": "305000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Private Hospitals Low Rise",
         "description": "45-60㎡ floor area per bed",
         "detailDescription": null,
@@ -4721,7 +4721,7 @@
         "high": "5000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Private Hospitals Low Rise",
         "description": "55-80㎡ floor area per bed Major Operating Theatre",
         "detailDescription": null,
@@ -4730,7 +4730,7 @@
         "high": "525000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Private Hospitals Low Rise",
         "description": "55-80㎡ floor area per bed Major Operating Theatre",
         "detailDescription": null,
@@ -4739,7 +4739,7 @@
         "high": "6800"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Basketball Centre",
         "detailDescription": null,
@@ -4748,7 +4748,7 @@
         "high": "2300"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Golf Courses Championship",
         "detailDescription": "Sand/Soil Site",
@@ -4757,7 +4757,7 @@
         "high": "21550000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Golf Courses Championship",
         "detailDescription": "Site on poor ground",
@@ -4766,7 +4766,7 @@
         "high": "55270000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Golf Courses Championship",
         "detailDescription": "Site requiring Rock Excavation",
@@ -4775,7 +4775,7 @@
         "high": "27050000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Grandstands Prestige Metropolitan",
         "detailDescription": null,
@@ -4784,7 +4784,7 @@
         "high": "23000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Marina Berths",
         "detailDescription": "Double-loaded",
@@ -4793,7 +4793,7 @@
         "high": "51000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Marina Berths",
         "detailDescription": "Single-loaded",
@@ -4802,7 +4802,7 @@
         "high": "59000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Marina Berths",
         "detailDescription": "Supper-Yachts",
@@ -4811,7 +4811,7 @@
         "high": "472500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Multi-Sport Playing Fields",
         "detailDescription": null,
@@ -4820,7 +4820,7 @@
         "high": "135"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Swimming Pool Centre",
         "detailDescription": null,
@@ -4829,7 +4829,7 @@
         "high": "4300"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Swimming Pools",
         "detailDescription": "Half Olympic",
@@ -4838,7 +4838,7 @@
         "high": "1700000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Swimming Pools",
         "detailDescription": "Olympic",
@@ -4847,7 +4847,7 @@
         "high": "3170000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Tennis Courts (6No) Lighting",
         "detailDescription": "Light",
@@ -4856,7 +4856,7 @@
         "high": "N/A"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Tennis Courts (6No) fencing 3.6m chain-wire,spoon drains",
         "detailDescription": "Asphalt",
@@ -4865,7 +4865,7 @@
         "high": "152500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Tennis Courts (6No) fencing 3.6m chain-wire,spoon drains",
         "detailDescription": "Concrete",
@@ -4874,7 +4874,7 @@
         "high": "75000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Tennis Courts (6No) fencing 3.6m chain-wire,spoon drains",
         "detailDescription": "Plexicusion",
@@ -4883,7 +4883,7 @@
         "high": "N/A"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Tennis Courts (6No) fencing 3.6m chain-wire,spoon drains",
         "detailDescription": "Rebound Ace",
@@ -4892,7 +4892,7 @@
         "high": "182500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Tennis Courts (6No) fencing 3.6m chain-wire,spoon drains",
         "detailDescription": "Red Porous",
@@ -4901,7 +4901,7 @@
         "high": "52000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Tennis Courts (6No) fencing 3.6m chain-wire,spoon drains",
         "detailDescription": "Synthetic Acrylic",
@@ -4910,7 +4910,7 @@
         "high": "78000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Recreational Facilities",
         "description": "Tennis Courts (6No) fencing 3.6m chain-wire,spoon drains",
         "detailDescription": "Synthetic Grass",
@@ -4919,7 +4919,7 @@
         "high": "117500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential General",
         "description": "1-3 Storey Units",
         "detailDescription": "85-120㎡ Per Unit",
@@ -4928,7 +4928,7 @@
         "high": "645000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential General",
         "description": "1-3 Storey Units",
         "detailDescription": "85-120㎡ Per Unit",
@@ -4937,7 +4937,7 @@
         "high": "N/A"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential General",
         "description": "Single and Double Storey",
         "detailDescription": null,
@@ -4946,7 +4946,7 @@
         "high": "2250000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential General",
         "description": "Single and Double Storey",
         "detailDescription": null,
@@ -4955,7 +4955,7 @@
         "high": "7200"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential General",
         "description": "Townhouses",
         "detailDescription": "90-120㎡ Per Unit",
@@ -4964,7 +4964,7 @@
         "high": "672500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential General",
         "description": "Townhouses",
         "detailDescription": "90-120㎡ Per Unit",
@@ -4973,7 +4973,7 @@
         "high": "N/A"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Over 10 and up to 20 Storey",
         "detailDescription": "Units 60-70㎡",
@@ -4982,7 +4982,7 @@
         "high": "395000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Over 10 and up to 20 Storey",
         "detailDescription": "Units 60-70㎡",
@@ -4991,7 +4991,7 @@
         "high": "5800"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Over 10 and up to 20 Storey",
         "detailDescription": "Units 90-120㎡",
@@ -5000,7 +5000,7 @@
         "high": "637500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Over 10 and up to 20 Storey",
         "detailDescription": "Units 90-120㎡",
@@ -5009,7 +5009,7 @@
         "high": "5500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Over 20 and up to 40 Storey",
         "detailDescription": "Units 60-70㎡",
@@ -5018,7 +5018,7 @@
         "high": "477500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Over 20 and up to 40 Storey",
         "detailDescription": "Units 60-70㎡",
@@ -5027,7 +5027,7 @@
         "high": "7300"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Over 20 and up to 40 Storey",
         "detailDescription": "Units 90-120㎡",
@@ -5036,7 +5036,7 @@
         "high": "702500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Over 20 and up to 40 Storey",
         "detailDescription": "Units 90-120㎡",
@@ -5045,7 +5045,7 @@
         "high": "6300"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Over 40 and up to 80 Storey",
         "detailDescription": "Units 60-70㎡",
@@ -5054,7 +5054,7 @@
         "high": "545000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Over 40 and up to 80 Storey",
         "detailDescription": "Units 60-70㎡",
@@ -5063,7 +5063,7 @@
         "high": "48000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Over 40 and up to 80 Storey",
         "detailDescription": "Units 90-120㎡",
@@ -5072,7 +5072,7 @@
         "high": "897500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Over 40 and up to 80 Storey",
         "detailDescription": "Units 90-120㎡",
@@ -5081,7 +5081,7 @@
         "high": "7800"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Up to 10 Storeys with lift",
         "detailDescription": "Units 60-70㎡",
@@ -5090,7 +5090,7 @@
         "high": "352500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Up to 10 Storeys with lift",
         "detailDescription": "Units 60-70㎡",
@@ -5099,7 +5099,7 @@
         "high": "5300"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Up to 10 Storeys with lift",
         "detailDescription": "Units 90-120㎡",
@@ -5108,7 +5108,7 @@
         "high": "562500"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Residential Multi Storey Units",
         "description": "Up to 10 Storeys with lift",
         "detailDescription": "Units 90-120㎡",
@@ -5117,7 +5117,7 @@
         "high": "4950"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Retail General",
         "description": "Small shoes and Showrooms",
         "detailDescription": null,
@@ -5126,7 +5126,7 @@
         "high": "2850"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Retail Regional Shopping Centres",
         "description": "Department Store",
         "detailDescription": null,
@@ -5135,7 +5135,7 @@
         "high": "3150"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Retail Regional Shopping Centres",
         "description": "Discount Deapartment Store",
         "detailDescription": null,
@@ -5144,7 +5144,7 @@
         "high": "2250"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Retail Regional Shopping Centres",
         "description": "Malls",
         "detailDescription": null,
@@ -5153,7 +5153,7 @@
         "high": "5900"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Retail Regional Shopping Centres",
         "description": "Speciality Shops",
         "detailDescription": null,
@@ -5162,7 +5162,7 @@
         "high": "3700"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Retail Regional Shopping Centres",
         "description": "Supermarket / Variety Store",
         "detailDescription": null,
@@ -5171,7 +5171,7 @@
         "high": "4000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Car Parks on Ground",
         "detailDescription": "Heavy Duty Paving",
@@ -5180,7 +5180,7 @@
         "high": "7200"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Car Parks on Ground",
         "detailDescription": "Light Duty Paving",
@@ -5189,7 +5189,7 @@
         "high": "5700"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Car Parks on Ground",
         "detailDescription": "Light Duty Paving to Shopping Centre Complex",
@@ -5198,7 +5198,7 @@
         "high": "9000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Demolition",
         "detailDescription": "Offices n.e15 Storeys, RC Frame",
@@ -5207,7 +5207,7 @@
         "high": "450"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Demolition",
         "detailDescription": "Offices n.e15 Storeys, Steel Frame",
@@ -5216,7 +5216,7 @@
         "high": "470"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Demolition",
         "detailDescription": "Offices n.e25 Storeys, Steel Frame",
@@ -5225,7 +5225,7 @@
         "high": "550"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Demolition",
         "detailDescription": "Single Storey Industrial, Brick Clad",
@@ -5234,7 +5234,7 @@
         "high": "225"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Demolition",
         "detailDescription": "Single Storey Industrial, Metal Clad",
@@ -5243,7 +5243,7 @@
         "high": "210"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Demolition",
         "detailDescription": "Single Storey, timber framed house",
@@ -5252,7 +5252,7 @@
         "high": "230"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Demolition",
         "detailDescription": "Single/Doudle Storey, brick house",
@@ -5261,7 +5261,7 @@
         "high": "265"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Demolition",
         "detailDescription": "Two Storey, RC Framed, masonry-clad",
@@ -5270,7 +5270,7 @@
         "high": "265"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Landscaping",
         "detailDescription": "Dens, shrubs, topsoil, grass",
@@ -5279,7 +5279,7 @@
         "high": "265"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Landscaping",
         "detailDescription": "Grassing, large areas topsoil sowing, treating",
@@ -5288,7 +5288,7 @@
         "high": "100"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Landscaping",
         "detailDescription": "Light, large areas, minimal planting",
@@ -5297,7 +5297,7 @@
         "high": "120000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Roads asphalt incl. drainage and kerbs",
         "detailDescription": "Industrial Estate, 10.40m wide",
@@ -5306,7 +5306,7 @@
         "high": "4250"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Site Works",
         "description": "Roads asphalt incl. drainage and kerbs",
         "detailDescription": "Residential Estate, 6.8m wide",
@@ -5315,7 +5315,7 @@
         "high": "2950"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Workstations",
         "description": "Call Centre",
         "detailDescription": null,
@@ -5324,7 +5324,7 @@
         "high": "4900"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Workstations",
         "description": "Executive",
         "detailDescription": null,
@@ -5333,7 +5333,7 @@
         "high": "47000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Workstations",
         "description": "Secretarial",
         "detailDescription": null,
@@ -5342,7 +5342,7 @@
         "high": "11000"
       },
       {
-        "region": "GoldCoast",
+        "region": "Gold Coast",
         "workType": "Workstations",
         "description": "Technical Staff",
         "detailDescription": null,
