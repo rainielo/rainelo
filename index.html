@@ -16,6 +16,7 @@
             box-sizing: border-box;
             max-width: 840px;
             margin: auto;
+            font-family: Arial, Impact,serif;
         }
 
         [v-cloak] {
@@ -77,6 +78,19 @@
         .el-scrollbar .el-scrollbar__bar {
             opacity: 1 !important;
         }
+
+        .popper-scrollbar-show {
+            width: 100%;
+            left: 0 !important;
+        }
+
+        .popper-scrollbar-show .el-select-dropdown__item {
+            height: auto;
+            white-space: normal;
+            line-height: 1.4;
+            padding: 12px;
+            border-bottom: 1px solid #fafafa;
+        }
     </style>
 
     <!-- import Vue before Element -->
@@ -90,6 +104,7 @@
                 <h3>Construction Cost Indicator</h3>
                 <el-form-item prop="region">
                     <el-select
+                            :popper-append-to-body="false"
                             popper-class="popper-scrollbar-show"
                             v-model="form.region" placeholder="REGION"
                             notFoundContent="Not Found"
@@ -103,6 +118,7 @@
                 </el-form-item>
                 <el-form-item prop="workType">
                     <el-select
+                            :popper-append-to-body="false"
                             popper-class="popper-scrollbar-show"
                             v-model="form.workType" placeholder="WORK TYPE"
                             @change="resetField(['description', 'detailDescription','unitOfMeasure'])">
@@ -112,6 +128,7 @@
 
                 <el-form-item prop="description">
                     <el-select
+                            :popper-append-to-body="false"
                             popper-class="popper-scrollbar-show"
                             v-model="form.description" placeholder="DESCRIPTION"
                             @change="resetField(['detailDescription', 'unitOfMeasure'])">
@@ -121,6 +138,7 @@
 
                 <el-form-item prop="detailDescription" v-if="DETAIL_DESCRIPTION.length">
                     <el-select
+                            :popper-append-to-body="false"
                             popper-class="popper-scrollbar-show"
                             v-model="form.detailDescription" placeholder="DETAIL DESCRIPTION" @change="resetField(['unitOfMeasure'])">
                         <el-option v-for="item in DETAIL_DESCRIPTION" :label="item" :value="item" :key="item"></el-option>
@@ -129,6 +147,7 @@
 
                 <el-form-item prop="unitOfMeasure">
                     <el-select
+                            :popper-append-to-body="false"
                             popper-class="popper-scrollbar-show"
                             v-model="form.unitOfMeasure" placeholder="UNIT OF MEASURE">
                         <el-option v-for="item in UNIT_OF_MEASURE" :label="item.toUpperCase()" :value="item" :key="item"></el-option>
