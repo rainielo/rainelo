@@ -16,6 +16,7 @@
             box-sizing: border-box;
             max-width: 840px;
             margin: auto;
+            font-family: Arial, Impact,serif;
         }
 
         [v-cloak] {
@@ -77,6 +78,19 @@
         .el-scrollbar .el-scrollbar__bar {
             opacity: 1 !important;
         }
+
+        .popper-scrollbar-show {
+            width: 100%;
+            left: 0 !important;
+        }
+
+        .popper-scrollbar-show .el-select-dropdown__item {
+            height: auto;
+            white-space: normal;
+            line-height: 1.4;
+            padding: 12px;
+            border-bottom: 1px solid #fafafa;
+        }
     </style>
 
     <!-- import Vue before Element -->
@@ -89,33 +103,33 @@
             <el-form style="text-align: center">
                 <h3>Construction Cost Indicator</h3>
                 <el-form-item prop="region">
-                    <el-select popper-class="popper-scrollbar-show" v-model="form.region" placeholder="REGION" @change="resetField(['workType', 'description', 'detailDescription', 'unitOfMeasure'])">
+                    <el-select :popper-append-to-body="false" popper-class="popper-scrollbar-show" v-model="form.region" placeholder="REGION" @change="resetField(['workType', 'description', 'detailDescription', 'unitOfMeasure'])">
                         <el-option v-for="item in REGION" :label="item.toUpperCase()" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
                 <el-form-item prop="workType">
-                    <el-select popper-class="popper-scrollbar-show" v-model="form.workType" placeholder="WORK TYPE" @change="resetField(['description', 'detailDescription','unitOfMeasure'])">
+                    <el-select :popper-append-to-body="false" popper-class="popper-scrollbar-show" v-model="form.workType" placeholder="WORK TYPE" @change="resetField(['description', 'detailDescription','unitOfMeasure'])">
 <!--                        <el-option v-for="item in WORK_TYPE" :label="item" :value="item"></el-option>-->
                         <el-option v-for="item in cciData['work-type'].values" :label="item.toUpperCase()" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
 
                 <el-form-item prop="description">
-                    <el-select popper-class="popper-scrollbar-show" v-model="form.description" placeholder="DESCRIPTION" @change="resetField(['detailDescription', 'unitOfMeasure'])">
+                    <el-select :popper-append-to-body="false" popper-class="popper-scrollbar-show" v-model="form.description" placeholder="DESCRIPTION" @change="resetField(['detailDescription', 'unitOfMeasure'])">
 <!--                        <el-option v-for="item in DESCRIPTION" :label="item" :value="item"></el-option>-->
                         <el-option v-for="item in cciData['description'].values" :label="item.toUpperCase()" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
 
                 <el-form-item prop="detailDescription" v-if="cciData['detailed-description'].values && cciData['detailed-description'].values.length">
-                    <el-select popper-class="popper-scrollbar-show" v-model="form.detailDescription" placeholder="DETAIL DESCRIPTION" @change="resetField(['unitOfMeasure'])">
+                    <el-select :popper-append-to-body="false" popper-class="popper-scrollbar-show" v-model="form.detailDescription" placeholder="DETAIL DESCRIPTION" @change="resetField(['unitOfMeasure'])">
 <!--                        <el-option v-for="item in DETAIL_DESCRIPTION" :label="item" :value="item"></el-option>-->
                         <el-option v-for="item in cciData['detailed-description'].values" :label="item.toUpperCase()" :value="item" :key="item"></el-option>
                     </el-select>
                 </el-form-item>
 
                 <el-form-item prop="unitOfMeasure">
-                    <el-select popper-class="popper-scrollbar-show" v-model="form.unitOfMeasure" placeholder="UNIT OF MEASURE">
+                    <el-select :popper-append-to-body="false" popper-class="popper-scrollbar-show" v-model="form.unitOfMeasure" placeholder="UNIT OF MEASURE">
 <!--                        <el-option v-for="item in UNIT_OF_MEASURE" :label="item" :value="item"></el-option>-->
                         <el-option v-for="item in cciData['measure-unit'].values" :label="item.toUpperCase()" :value="item" :key="item"></el-option>
                     </el-select>
